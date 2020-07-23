@@ -48,3 +48,13 @@ def anywordcountbot():
         print('Checking again')
 
 anywordcountbot()
+
+# ---- REFACTORING ----
+
+# def searchforcall():
+#
+# def searchthroughhistory():
+#
+# def replytocomment():
+#
+# def checkagain():
