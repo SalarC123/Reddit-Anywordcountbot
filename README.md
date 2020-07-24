@@ -21,3 +21,7 @@ client id and client secret will show up once you make a reddit developer applic
 https://www.reddit.com/prefs/apps
 
 put the username and password of your reddit account and write your own user-agent that describes the app ---> EXAMPLE ----> anywordcountbot:v1.1 by 1Test2Bot3
+
+If you are running the code yourself, remember to remove the second import which gets only my secret information
+
+Bot does not run 24/7, so it is advisable that you run the code yourself
