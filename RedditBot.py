@@ -26,18 +26,18 @@ def anywordcountbot():
                 for submission in reddit.redditor(commentattributes[1]).submissions.new(limit=None):
                     if commentattributes[2] in submission.title:
                         for word in submission.title.split():
-                            if commentattributes[2] in word:
+                            if commentattributes[2].lower() == word.lower():
                                 wordcount += 1
                     # Checks each submission text to increase count
                     if commentattributes[2] in submission.selftext:
                         for word in submission.selftext.split():
-                            if commentattributes[2] in word:
+                            if commentattributes[2].lower() == word.lower():
                                 wordcount += 1
                 # Checks each comment and increases count for every instance
                 for usercomment in reddit.redditor(commentattributes[1]).comments.new(limit=None):
                     if commentattributes[2] in usercomment.body:
                         for word in usercomment.body.split():
-                            if commentattributes[2] in word:
+                            if commentattributes[2].lower() == word.lower():
                                 wordcount += 1
             except:
                 comment.reply(f'{commentattributes[1]} is not a real Reddit user!\n\nMake sure to omit the u/ and follow this format (letter case and spacing do not matter):\n\nanywordcountbot usertocheck  wordtocheck')
