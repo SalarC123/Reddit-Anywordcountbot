@@ -4,11 +4,11 @@
 
 Type in the comment section of any reddit submission to call bot --> EXAMPLE -->    anywordcountbot   spez   reddit
 
-'u/' is not needed for usernames and spaces between each word are not important
+'u/' is not needed for usernames and spaces between each word are not important. Also, letter cases don't matter when you call the bot.
 
 Bot will check through the submission and comment history to see how many times that the specified user has said the specified word
 
-Bot checks the new stream of comments every 10 seconds to look for bot calls
+Bot checks the new stream of comments every 3 seconds to look for bot calls
 
 
 Make sure to put your own information where it says ---> reddit = praw.Reddit(client_id = 'PUT_CLIENT_ID_HERE',
