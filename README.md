@@ -1,4 +1,4 @@
-# Reddit-Bot
+# Reddit-AnyWordCountBot
 
 --- Anywordcountbot for Reddit ---
 
