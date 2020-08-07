@@ -1,6 +1,6 @@
 git+https://github.com/SalarC123/Reddit-Anywordcountbot.git@master
-praw==7.1.0
-regex==2020.7.14
+praw
+regex
 altgraph==0.10.2
 appdirs==1.4.4
 appnope==0.1.0
@@ -12,7 +12,6 @@ backports.functools-lru-cache==1.6.1
 backports.shutil-get-terminal-size==1.0.0
 bdist-mpkg==0.5.0
 beautifulsoup4==4.9.1
-bonjour-py==0.3
 bs4==0.0.1
 certifi==2020.4.5.1
 cffi==1.12.2
@@ -114,7 +113,6 @@ soupsieve==1.9.6
 tornado==5.1.1
 traitlets==4.3.3
 turtle==0.0.2
-Twisted==20.3.0
 typing==3.7.4.3
 urllib3==1.25.9
 vboxapi==1.0
