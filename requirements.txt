@@ -1,0 +1,4 @@
+git+https://github.com/SalarC123/Reddit-Anywordcountbot.git@master
+praw==7.1.0
+botsecrets
+regex==2020.7.14
