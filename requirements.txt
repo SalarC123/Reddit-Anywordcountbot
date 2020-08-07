@@ -1,4 +1,0 @@
-git+https://github.com/SalarC123/Reddit-Anywordcountbot.git@master
-praw
-re
-
