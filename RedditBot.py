@@ -10,6 +10,16 @@ reddit = praw.Reddit(client_id= PUT_CLIENT_ID_HERE,
                      username= PUT_USER_NAME_HERE)
 
 def anywordcountbot():
+
+    '''
+    anywordcountbot() handles all the work that the bot needs to
+    preform without any other functions. The bot will continuously
+    check reddit submissions looking for "anywordcountbot <user> <word>"
+    until it has found a match. It will respond with how many times a
+    person said a certain word and will keep going until the code is
+    manually stopped.
+    '''
+
     while True:
         # Checks each comment in the generated stream of new comments
         # Skips bot calls that were made before the bot was running
