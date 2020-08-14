@@ -12,11 +12,13 @@ reddit = praw.Reddit(client_id= PUT_CLIENT_ID_HERE,
 def anywordcountbot():
     while True:
         # Checks each comment in the generated stream of new comments
+        # Skips bot calls that were made before the bot was running
         for comment in reddit.subreddit('all').stream.comments(skip_existing = True):
             try:
                 # Checks for bot-name, username, word-to-check
                 text = re.compile(r'anywordcountbot(\s)+(\w)+(\s)+(\w)+',re.I).search(comment.body).group()
             except:
+                # Goes to next submission if word doesn't show up
                 continue
             wordcount = 0
             # Divides comment into the bot-name, username, word-to-check
@@ -50,13 +52,3 @@ def anywordcountbot():
             time.sleep(3)
 
 anywordcountbot()
-
-# ---- REFACTORING ----
-#
-# def searchforcall():
-#
-# def searchthroughhistory():
-#
-# def replytocomment():
-#
-# def checkagain():
