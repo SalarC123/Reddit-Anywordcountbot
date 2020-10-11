@@ -1,13 +1,8 @@
 import praw
 import re
-from botsecrets import PUT_CLIENT_ID_HERE, PUT_CLIENT_SECRET_HERE, PUT_PASSWORD_HERE, PUT_USER_AGENT_HERE, PUT_USER_NAME_HERE
 import time
 
-reddit = praw.Reddit(client_id= PUT_CLIENT_ID_HERE,
-                     client_secret= PUT_CLIENT_SECRET_HERE,
-                     password= PUT_PASSWORD_HERE,
-                     user_agent= PUT_USER_AGENT_HERE,
-                     username= PUT_USER_NAME_HERE)
+reddit = praw.Reddit("bot1")
 
 def anywordcountbot():
 
