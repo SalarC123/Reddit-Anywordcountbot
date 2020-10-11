@@ -6,7 +6,7 @@
 .DS_Store
 .AppleDouble
 .LSOverride
-botsecrets.py
+praw.ini
 __pycache__
 
 # Icon must end with two \r
